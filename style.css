@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #5aa9f7, #2a4fb8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-headline {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    animation: fadeSlideDown 0.8s ease;
+}
+
+.box {
+    width: 390px;
+    padding: 40px 35px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    animation: fadeIn 0.9s ease;
+    transition: transform 0.35s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.32);
+}
+
+.logo {
+    width: 90px;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1.8px solid rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.35);
+    color: #000;
+    transition: 0.25s;
+    backdrop-filter: blur(4px);
+}
+
+input::placeholder {
+    color: #555;
+}
+
+input:focus {
+    border-color: #ffffff;
+    outline: none;
+    background: rgba(255,255,255,0.65);
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #243b78, #0f1e46);
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #182c66, #0a152f);
+    transform: scale(1.04);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
